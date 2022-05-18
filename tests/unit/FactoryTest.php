@@ -55,7 +55,7 @@ class FactoryTest extends TestCase
 
         $currentRulePrefixes = $factory->getRulePrefixes();
 
-        $this->assertContains(
+        $this->assertStringContainsString(
             $expectedNamespace,
             array_shift($currentRulePrefixes),
             'Prepended namespace rule was not found as expected into the prefix list.' . PHP_EOL .
