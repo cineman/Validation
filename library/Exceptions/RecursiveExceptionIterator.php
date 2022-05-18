@@ -42,12 +42,12 @@ class RecursiveExceptionIterator implements RecursiveIterator, Countable
         return new static($this->current());
     }
 
-    public function current()
+    public function current() : mixed
     {
         return $this->exceptions->current();
     }
 
-    public function key()
+    public function key() : mixed
     {
         return $this->exceptions->key();
     }

@@ -14,6 +14,7 @@ namespace Respect\Validation\Exceptions;
 use IteratorAggregate;
 use RecursiveIteratorIterator;
 use SplObjectStorage;
+use Traversable;
 
 class NestedValidationException extends ValidationException implements IteratorAggregate
 {
@@ -150,7 +151,7 @@ class NestedValidationException extends ValidationException implements IteratorA
     /**
      * @return SplObjectStorage
      */
-    public function getIterator()
+    public function getIterator() : Traversable
     {
         $childrenExceptions = new SplObjectStorage();
 
