@@ -22,7 +22,7 @@ class FloatValTest extends TestCase
 {
     protected $floatValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->floatValidator = new FloatVal();
     }

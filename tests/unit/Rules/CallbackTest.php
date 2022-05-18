@@ -23,7 +23,7 @@ class CallbackTest extends TestCase
     private $truthy;
     private $falsy;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->truthy = new Callback(function () {
             return true;

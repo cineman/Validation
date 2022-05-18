@@ -22,7 +22,7 @@ class NoWhitespaceTest extends TestCase
 {
     protected $noWhitespaceValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->noWhitespaceValidator = new NoWhitespace();
     }

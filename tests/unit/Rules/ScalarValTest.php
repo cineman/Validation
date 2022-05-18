@@ -22,7 +22,7 @@ class ScalarValTest extends TestCase
 {
     protected $rule;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->rule = new ScalarVal();
     }

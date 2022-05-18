@@ -23,12 +23,12 @@ class RecursiveExceptionIterator implements RecursiveIterator, Countable
         $this->exceptions = $parent->getRelated();
     }
 
-    public function count()
+    public function count() : int
     {
         return $this->exceptions->count();
     }
 
-    public function hasChildren()
+    public function hasChildren() : bool
     {
         if (!$this->valid()) {
             return false;
@@ -37,7 +37,7 @@ class RecursiveExceptionIterator implements RecursiveIterator, Countable
         return ($this->current() instanceof NestedValidationException);
     }
 
-    public function getChildren()
+    public function getChildren() : ?RecursiveIterator
     {
         return new static($this->current());
     }
@@ -52,17 +52,17 @@ class RecursiveExceptionIterator implements RecursiveIterator, Countable
         return $this->exceptions->key();
     }
 
-    public function next()
+    public function next() : void
     {
         $this->exceptions->next();
     }
 
-    public function rewind()
+    public function rewind() : void
     {
         $this->exceptions->rewind();
     }
 
-    public function valid()
+    public function valid() : bool
     {
         return $this->exceptions->valid();
     }

@@ -37,7 +37,7 @@ class Contains extends AbstractRule
             return in_array($this->containsValue, $input);
         }
 
-        return false !== mb_stripos($input, $this->containsValue, 0, mb_detect_encoding($input));
+        return false !== mb_stripos($input ?? '', $this->containsValue ?? '', 0, mb_detect_encoding($input ?? ''));
     }
 
     protected function validateIdentical($input)

@@ -23,7 +23,7 @@ class DateTest extends RuleTestCase
 {
     protected $dateValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->dateValidator = new Date();
     }

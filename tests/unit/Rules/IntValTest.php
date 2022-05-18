@@ -22,7 +22,7 @@ class IntValTest extends TestCase
 {
     protected $intValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->intValidator = new IntVal();
     }

@@ -22,7 +22,7 @@ class CnhTest extends TestCase
 {
     protected $cnhValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->cnhValidator = new Cnh();
     }

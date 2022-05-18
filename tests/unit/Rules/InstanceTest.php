@@ -22,7 +22,7 @@ class InstanceTest extends TestCase
 {
     protected $instanceValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->instanceValidator = new Instance('ArrayObject');
     }

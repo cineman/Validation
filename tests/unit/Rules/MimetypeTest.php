@@ -24,14 +24,14 @@ class MimetypeTest extends TestCase
 {
     private $filename;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->filename = sprintf('%s/validation.txt', sys_get_temp_dir());
 
         file_put_contents($this->filename, 'File content');
     }
 
-    protected function tearDown()
+    protected function tearDown() : void
     {
         unlink($this->filename);
     }

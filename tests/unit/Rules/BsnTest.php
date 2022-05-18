@@ -28,7 +28,7 @@ class BsnTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->rule = new Bsn();
     }

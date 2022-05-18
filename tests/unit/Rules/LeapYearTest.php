@@ -23,7 +23,7 @@ class LeapYearTest extends TestCase
 {
     protected $leapYearValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->leapYearValidator = new LeapYear();
     }

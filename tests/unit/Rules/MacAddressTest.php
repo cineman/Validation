@@ -22,7 +22,7 @@ class MacAddressTest extends TestCase
 {
     protected $macaddressValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->macaddressValidator = new MacAddress();
     }

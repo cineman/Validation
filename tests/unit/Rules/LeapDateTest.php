@@ -23,7 +23,7 @@ class LeapDateTest extends TestCase
 {
     protected $leapDateValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->leapDateValidator = new LeapDate('Y-m-d');
     }

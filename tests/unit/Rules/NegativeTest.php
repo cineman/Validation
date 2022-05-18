@@ -22,7 +22,7 @@ class NegativeTest extends TestCase
 {
     protected $negativeValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->negativeValidator = new Negative();
     }

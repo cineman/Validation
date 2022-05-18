@@ -22,7 +22,7 @@ class RomanTest extends TestCase
 {
     protected $romanValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->romanValidator = new Roman();
     }

@@ -11,28 +11,25 @@
 
 namespace Respect\Validation;
 
-use PHPUnit_Framework_MockObject_MockObject;
-use PHPUnit_Framework_TestCase;
-
-abstract class TestCase extends PHPUnit_Framework_TestCase
+abstract class TestCase extends  \PHPUnit\Framework\TestCase
 {
-    /**
-     * Returns a test double for the specified class.
-     *
-     * This method is created to keep compatibility with PHPUnit ~4.0.
-     *
-     * @param string $originalClassName
-     *
-     * @return PHPUnit_Framework_MockObject_MockObject
-     */
-    protected function createMock($originalClassName)
-    {
-        if (!class_exists('PHPUnit_Framework_Constraint_IsFinite')) {
-            return $this->getMockBuilder($originalClassName)
-                ->disableOriginalConstructor()
-                ->getMock();
-        }
+    // /**
+    //  * Returns a test double for the specified class.
+    //  *
+    //  * This method is created to keep compatibility with PHPUnit ~4.0.
+    //  *
+    //  * @param string $originalClassName
+    //  *
+    //  * @return PHPUnit_Framework_MockObject_MockObject
+    //  */
+    // protected function createMock($originalClassName)
+    // {
+    //     if (!class_exists('PHPUnit_Framework_Constraint_IsFinite')) {
+    //         return $this->getMockBuilder($originalClassName)
+    //             ->disableOriginalConstructor()
+    //             ->getMock();
+    //     }
 
-        return parent::createMock($originalClassName);
-    }
+    //     return parent::createMock($originalClassName);
+    // }
 }

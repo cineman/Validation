@@ -22,7 +22,7 @@ class XdigitTest extends TestCase
 {
     protected $xdigitsValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->xdigitsValidator = new Xdigit();
     }

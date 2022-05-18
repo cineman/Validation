@@ -22,7 +22,7 @@ class CnpjTest extends TestCase
 {
     protected $cnpjValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->cnpjValidator = new Cnpj();
     }

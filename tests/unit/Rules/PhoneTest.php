@@ -22,7 +22,7 @@ class PhoneTest extends TestCase
 {
     protected $phoneValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->phoneValidator = new Phone();
     }

@@ -22,7 +22,7 @@ class NfeAccessKeyTest extends TestCase
 {
     protected $nfeValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->nfeValidator = new NfeAccessKey();
     }

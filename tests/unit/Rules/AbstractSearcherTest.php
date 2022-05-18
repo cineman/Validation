@@ -17,7 +17,7 @@ class AbstractSearcherTest extends TestCase
 {
     protected $searcherRuleMock;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->searcherRuleMock = $this->getMockForAbstractClass('Respect\\Validation\\Rules\\AbstractSearcher');
     }

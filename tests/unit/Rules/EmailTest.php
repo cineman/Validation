@@ -50,12 +50,12 @@ class EmailTest extends TestCase
         return $emailValidatorMock;
     }
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->setEmailValidatorExists(false);
     }
 
-    protected function tearDown()
+    protected function tearDown() : void
     {
         $this->resetClassExists();
     }

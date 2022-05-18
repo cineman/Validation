@@ -22,7 +22,7 @@ class CpfTest extends TestCase
 {
     protected $cpfValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->cpfValidator = new Cpf();
     }

@@ -22,7 +22,7 @@ class EvenTest extends TestCase
 {
     protected $evenValidator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->evenValidator = new Even();
     }
